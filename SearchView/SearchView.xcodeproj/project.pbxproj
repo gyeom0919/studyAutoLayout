@@ -16,6 +16,8 @@
 		8D8DCA6F28D1CE0C000A0A77 /* SearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8DCA6E28D1CE0C000A0A77 /* SearchViewTests.swift */; };
 		8D8DCA7928D1CE0C000A0A77 /* SearchViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8DCA7828D1CE0C000A0A77 /* SearchViewUITests.swift */; };
 		8D8DCA7B28D1CE0C000A0A77 /* SearchViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8DCA7A28D1CE0C000A0A77 /* SearchViewUITestsLaunchTests.swift */; };
+		8DBF7A3D28D2050600CEF2B4 /* NanumGothicBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8DBF7A3B28D2050600CEF2B4 /* NanumGothicBold.otf */; };
+		8DBF7A3E28D2050600CEF2B4 /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8DBF7A3C28D2050600CEF2B4 /* NanumGothic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8D8DCA7428D1CE0C000A0A77 /* SearchViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8DCA7828D1CE0C000A0A77 /* SearchViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewUITests.swift; sourceTree = "<group>"; };
 		8D8DCA7A28D1CE0C000A0A77 /* SearchViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8DBF7A3B28D2050600CEF2B4 /* NanumGothicBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.otf; sourceTree = "<group>"; };
+		8DBF7A3C28D2050600CEF2B4 /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		8D8DCA5628D1CE0B000A0A77 /* SearchView */ = {
 			isa = PBXGroup;
 			children = (
+				8DBF7A3A28D204E200CEF2B4 /* Fonts */,
+				8D8DCA8728D1CEF3000A0A77 /* Label */,
 				8D8DCA5728D1CE0B000A0A77 /* AppDelegate.swift */,
 				8D8DCA5928D1CE0B000A0A77 /* SceneDelegate.swift */,
 				8D8DCA5B28D1CE0B000A0A77 /* ViewController.swift */,
@@ -125,6 +131,22 @@
 				8D8DCA7A28D1CE0C000A0A77 /* SearchViewUITestsLaunchTests.swift */,
 			);
 			path = SearchViewUITests;
+			sourceTree = "<group>";
+		};
+		8D8DCA8728D1CEF3000A0A77 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		8DBF7A3A28D204E200CEF2B4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8DBF7A3C28D2050600CEF2B4 /* NanumGothic.otf */,
+				8DBF7A3B28D2050600CEF2B4 /* NanumGothicBold.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +253,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DBF7A3D28D2050600CEF2B4 /* NanumGothicBold.otf in Resources */,
 				8D8DCA6428D1CE0C000A0A77 /* LaunchScreen.storyboard in Resources */,
 				8D8DCA6128D1CE0C000A0A77 /* Assets.xcassets in Resources */,
 				8D8DCA5F28D1CE0B000A0A77 /* Main.storyboard in Resources */,
+				8DBF7A3E28D2050600CEF2B4 /* NanumGothic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
