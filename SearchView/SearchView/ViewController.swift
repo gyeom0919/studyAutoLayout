@@ -9,6 +9,16 @@ import UIKit
 
 class ViewController: UIViewController{
     
+    var recommendkeyLabel : UILabel!
+
+    let recommendKeywords = ["빡코딩", "코딩","오늘도 빡코딩","할라피뇨","코딩","빡코딩","버거킹","돈까스","치즈","오므라이스","핫도그","아이스아메리카노"]
+    
+
+    
+
+    
+    let cellID = "Cell"
+
     private let mainView = UIView()
     
     private func setupView() {
@@ -23,6 +33,7 @@ class ViewController: UIViewController{
         
         setupView()
         setUI()
+
     }
 
 
@@ -30,6 +41,7 @@ class ViewController: UIViewController{
 
 
 extension ViewController {
+    
     
     
     // 검색 Title
@@ -111,14 +123,72 @@ extension ViewController {
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: recommendLabel.bottomAnchor, constant: 21),
             collectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 26),
-            collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -26)
+            collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -26),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -514)
         ])
         
         collectionView.backgroundColor = .blue
         
+        collectionView.register(KeywordCell.self, forCellWithReuseIdentifier: cellID)
         
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        
+        
+
+        // 콜렉션 뷰 ( Label Cell )
+        let recommendkeyLabel : UILabel = {
+            let key = UILabel()
+            recommendLabel.translatesAutoresizingMaskIntoConstraints = false
+            
+            return key
+        }()
+            
+        
+    
     }
     
+}
 
+extension ViewController : UICollectionViewDataSource {
+    
+    // 콜렉션 뷰 ( Label Cell )
+    
+    // Cell의 갯수
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return recommendKeywords.count
+    }
+    
+    //
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! KeywordCell
+        
+        
+    
+        cell.backgroundColor = .red
+        
+        
+        
+        return cell
+    }
+    
+    
+}
+
+extension ViewController : UICollectionViewDelegate{
+    
+}
+
+// Cell의 사이즈를 정한다
+extension ViewController : UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: 55, height: 24)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 29)
+    }
     
 }

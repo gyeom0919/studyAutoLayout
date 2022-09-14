@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D8BE86B28D21C8400CB6BB6 /* KeywordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BE86A28D21C8400CB6BB6 /* KeywordCell.swift */; };
 		8D8DCA5828D1CE0B000A0A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8DCA5728D1CE0B000A0A77 /* AppDelegate.swift */; };
 		8D8DCA5A28D1CE0B000A0A77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8DCA5928D1CE0B000A0A77 /* SceneDelegate.swift */; };
 		8D8DCA5C28D1CE0B000A0A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8DCA5B28D1CE0B000A0A77 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D8BE86A28D21C8400CB6BB6 /* KeywordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCell.swift; sourceTree = "<group>"; };
 		8D8DCA5428D1CE0B000A0A77 /* SearchView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8DCA5728D1CE0B000A0A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D8DCA5928D1CE0B000A0A77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		8D8DCA5628D1CE0B000A0A77 /* SearchView */ = {
 			isa = PBXGroup;
 			children = (
+				8D8BE86A28D21C8400CB6BB6 /* KeywordCell.swift */,
 				8DBF7A3A28D204E200CEF2B4 /* Fonts */,
 				8D8DCA8728D1CEF3000A0A77 /* Label */,
 				8D8DCA5728D1CE0B000A0A77 /* AppDelegate.swift */,
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8DCA5C28D1CE0B000A0A77 /* ViewController.swift in Sources */,
+				8D8BE86B28D21C8400CB6BB6 /* KeywordCell.swift in Sources */,
 				8D8DCA5828D1CE0B000A0A77 /* AppDelegate.swift in Sources */,
 				8D8DCA5A28D1CE0B000A0A77 /* SceneDelegate.swift in Sources */,
 			);
