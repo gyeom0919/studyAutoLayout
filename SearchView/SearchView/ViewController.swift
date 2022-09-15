@@ -9,13 +9,11 @@ import UIKit
 
 class ViewController: UIViewController{
     
+    let recommendKeywords  = ["빡코딩", "코딩","오늘도 빡코딩","할라피뇨","코딩","빡코딩","버거킹","돈까스","치즈","오므라이스","핫도그","아이스아메리카노"]
+    
+    let popularKeywords = ["빡코딩", "오늘도 빡코딩", "버거킹", "오므라이스", "핫도그", "아이스크림", "치즈", "빡코딩", "빡코딩", "오늘도 빡코딩", "버거킹", "오므라이스", "핫도그", "아이스크림","치즈", "빡코딩", "빡코딩", "오늘도 빡코딩"]
+    
     var recommendkeyLabel : UILabel!
-
-    let recommendKeywords = ["빡코딩", "코딩","오늘도 빡코딩","할라피뇨","코딩","빡코딩","버거킹","돈까스","치즈","오므라이스","핫도그","아이스아메리카노"]
-    
-
-    
-
     
     let cellID = "Cell"
 
@@ -25,6 +23,7 @@ class ViewController: UIViewController{
         mainView.translatesAutoresizingMaskIntoConstraints = false
         mainView.backgroundColor = .white
         view.addSubview(mainView)
+
     }
 
 
@@ -33,12 +32,10 @@ class ViewController: UIViewController{
         
         setupView()
         setUI()
-
     }
 
 
 }
-
 
 extension ViewController {
     
@@ -97,7 +94,8 @@ extension ViewController {
         
         recommendLabel.text = "추천 키워드"
         recommendLabel.textColor = .black
-        recommendLabel.font = UIFont(name: "NanumGothic", size: 16)
+        recommendLabel.font = UIFont(name: "NanumGothicOTF-Bold", size: 16)
+        recommendLabel.font = recommendLabel.font.withSize(16)
 
         
         
@@ -121,57 +119,97 @@ extension ViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: recommendLabel.bottomAnchor, constant: 21),
-            collectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 26),
-            collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -26),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -514)
+            collectionView.topAnchor.constraint(equalTo: recommendLabel.bottomAnchor, constant: 11),
+            collectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15),
+            collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -35),
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -540)
         ])
         
-        collectionView.backgroundColor = .blue
-        
+                
         collectionView.register(KeywordCell.self, forCellWithReuseIdentifier: cellID)
         
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        // 인기 검색어
+        let popularLabel = UILabel()
+        view.addSubview(popularLabel)
+        
+        popularLabel.text = "인기 검색어"
+        popularLabel.textColor = .black
+        popularLabel.font = UIFont(name: "NanumGothicOTF-Bolds", size: 16)
+        popularLabel.font = popularLabel.font.withSize(16)
+
+
+        
+        
+        popularLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            popularLabel.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 24),
+            popularLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 16)
+        ])
+        
+        // 테이블 뷰
+        
+        let tableView = UITableView()
+        
+        view.addSubview(tableView)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: popularLabel.bottomAnchor, constant: 10),
+            tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
+            tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 284 ),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 20)
+        ])
+        
+        
+        tableView.register(UITableViewCell.self
+                           , forCellReuseIdentifier: "cell")
+        
+        // 테이블 뷰 세퍼레이터 --- 라인 없애기
+        tableView.separatorStyle = .none
+        
         
 
-        // 콜렉션 뷰 ( Label Cell )
-        let recommendkeyLabel : UILabel = {
-            let key = UILabel()
-            recommendLabel.translatesAutoresizingMaskIntoConstraints = false
-            
-            return key
-        }()
-            
-        
-    
     }
+    
+    
     
 }
 
 extension ViewController : UICollectionViewDataSource {
+
     
     // 콜렉션 뷰 ( Label Cell )
     
     // Cell의 갯수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return recommendKeywords.count
+        
+        let count = recommendKeywords.count
+        return count
     }
     
-    //
+    // Cell 꾸미기
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! KeywordCell
         
         
-    
-        cell.backgroundColor = .red
-        
-        
-        
+        cell.label?.text = recommendKeywords[indexPath.row]
+            
+        //셀의 색
+        cell.backgroundColor = UIColor.white
+        //셀 가장자리
+        cell.layer.cornerRadius = 8
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor(red: 0.883, green: 0.861, blue: 0.861, alpha: 1).cgColor
         return cell
     }
-    
     
 }
 
@@ -182,13 +220,53 @@ extension ViewController : UICollectionViewDelegate{
 // Cell의 사이즈를 정한다
 extension ViewController : UICollectionViewDelegateFlowLayout {
     
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 55, height: 24)
+        // Cell 사이즈가 글자간격 + 20, 높이 24 (lable과 겹치지 않도록)
+        let cellSize = CGSize(width: recommendKeywords[indexPath.item].size(withAttributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 12)]).width + 20, height: 24)
+        return cellSize
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 29)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 60)
+    }
+    
+    // 상하 간격
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
     }
     
 }
+
+extension ViewController : UITableViewDelegate, UITableViewDataSource {
+    
+    // popularKeywords 배열에 해당하는 갯수만큼 cell 생성
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return popularKeywords.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        // 셀 텍스트 넣기
+        // popularKeywords에 있는 배열을 넣어줌
+        tableCell.textLabel?.text = popularKeywords[indexPath.row]
+        tableCell.textLabel?.textAlignment = .left
+        tableCell.textLabel?.font = UIFont.systemFont(ofSize: 12)
+        tableCell.textLabel?.textColor = UIColor.gray
+    
+        tableCell.selectionStyle = .none
+        
+        return tableCell
+    }
+    
+    // 셀 높이
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 26
+    }
+    
+
+
+}
+
