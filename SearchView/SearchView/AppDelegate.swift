@@ -7,8 +7,12 @@
 
 import UIKit
 
+
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var QuestList = [QuestData]()
 
 
 
