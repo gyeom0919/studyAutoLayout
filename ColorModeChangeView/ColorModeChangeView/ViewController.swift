@@ -21,6 +21,29 @@ class ViewController: UIViewController {
     private let announceLabel = UILabel()
     private let darkModeImage = UIImageView()
     private let lightModeImage = UIImageView()
+    private let leftRadioButton = UIButton()
+    private let rightRadioButton = UIButton()
+    
+    // LeftButton 눌렸을 시
+    @objc func leftButtonClicked(_ sender : UIButton) {
+        
+            sender.setImage(UIImage(named: "radio_filled"), for: .normal)
+            rightRadioButton.setImage(UIImage(named: "radio"), for: .normal)
+        
+//        leftRadioButton.image = UIImage(named: "radio_filled")
+        print("left clicked")
+    }
+    
+    //  RightButton 눌렸을 시
+    @objc func rightButtonClicked(_ sender : UIButton) {
+        
+            sender.setImage(UIImage(named: "radio_filled"), for: .normal)
+            leftRadioButton.setImage(UIImage(named: "radio"), for: .normal)
+        
+//        leftRadioButton.image = UIImage(named: "radio_filled")
+        print("right clicked")
+    }
+
 
 }
 
@@ -167,8 +190,35 @@ extension ViewController {
             make.right.equalTo(view.snp.right).offset(-55.5)
         }
     
+        // Left Radio Button
+        let leftRadioButton = UIButton(type: .custom)
+        leftRadioButton.setImage(UIImage(named: "radio"), for: .normal)
         
+        view.addSubview(leftRadioButton)
+        
+        leftRadioButton.addTarget(self, action: #selector(leftButtonClicked), for: .touchUpInside)
     
+        leftRadioButton.snp.makeConstraints{
+            make in
+            make.top.equalTo(darkModeLabel.snp.bottom).offset(20)
+            make.left.equalTo(view.snp.left).offset(91)
+        }
+        
+        // Right Radio Button
+        let rightRadioButton = UIButton(type: .custom)
+        rightRadioButton.setImage(UIImage(named: "radio"), for: .normal)
+        
+        view.addSubview(rightRadioButton)
+        
+        rightRadioButton.addTarget(self, action: #selector(rightButtonClicked), for: .touchUpInside)
+
+    
+        rightRadioButton.snp.makeConstraints{
+            make in
+            make.top.equalTo(lightModeLabel.snp.bottom).offset(20)
+            make.right.equalTo(view.snp.right).offset(-91)
+        }
+        
     }
 }
 
