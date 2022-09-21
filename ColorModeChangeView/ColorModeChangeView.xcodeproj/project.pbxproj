@@ -16,8 +16,10 @@
 		8D0C0F4C28D98F2A009BF177 /* ColorModeChangeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C0F4B28D98F2A009BF177 /* ColorModeChangeViewTests.swift */; };
 		8D0C0F5628D98F2A009BF177 /* ColorModeChangeViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C0F5528D98F2A009BF177 /* ColorModeChangeViewUITests.swift */; };
 		8D0C0F5828D98F2A009BF177 /* ColorModeChangeViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0C0F5728D98F2A009BF177 /* ColorModeChangeViewUITestsLaunchTests.swift */; };
-		8D0C0F6628DAFE4D009BF177 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8D0C0F6528DAFE4D009BF177 /* SnapKit */; };
-		8D0C0F6828DAFE4D009BF177 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8D0C0F6728DAFE4D009BF177 /* SnapKit-Dynamic */; };
+		8DC815AC28DB031B00D7385A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8DC815AB28DB031B00D7385A /* SnapKit */; };
+		8DC815AF28DB1CEE00D7385A /* NanumGothicExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DC815AE28DB1CEE00D7385A /* NanumGothicExtraBold.ttf */; };
+		8DC815B128DB1CF600D7385A /* NanumGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DC815B028DB1CF600D7385A /* NanumGothicBold.ttf */; };
+		8DC815B428DB221200D7385A /* announceLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC815B328DB221200D7385A /* announceLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		8D0C0F5128D98F2A009BF177 /* ColorModeChangeViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorModeChangeViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0C0F5528D98F2A009BF177 /* ColorModeChangeViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModeChangeViewUITests.swift; sourceTree = "<group>"; };
 		8D0C0F5728D98F2A009BF177 /* ColorModeChangeViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModeChangeViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8DC815AE28DB1CEE00D7385A /* NanumGothicExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicExtraBold.ttf; sourceTree = "<group>"; };
+		8DC815B028DB1CF600D7385A /* NanumGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.ttf; sourceTree = "<group>"; };
+		8DC815B328DB221200D7385A /* announceLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = announceLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D0C0F6628DAFE4D009BF177 /* SnapKit in Frameworks */,
-				8D0C0F6828DAFE4D009BF177 /* SnapKit-Dynamic in Frameworks */,
+				8DC815AC28DB031B00D7385A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +107,8 @@
 		8D0C0F3328D98F29009BF177 /* ColorModeChangeView */ = {
 			isa = PBXGroup;
 			children = (
+				8DC815B228DB21E400D7385A /* CustomClass */,
+				8DC815AD28DB1CCE00D7385A /* Font */,
 				8D0C0F3428D98F29009BF177 /* AppDelegate.swift */,
 				8D0C0F3628D98F29009BF177 /* SceneDelegate.swift */,
 				8D0C0F3828D98F29009BF177 /* ViewController.swift */,
@@ -131,6 +137,23 @@
 			path = ColorModeChangeViewUITests;
 			sourceTree = "<group>";
 		};
+		8DC815AD28DB1CCE00D7385A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				8DC815B028DB1CF600D7385A /* NanumGothicBold.ttf */,
+				8DC815AE28DB1CEE00D7385A /* NanumGothicExtraBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		8DC815B228DB21E400D7385A /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				8DC815B328DB221200D7385A /* announceLabel.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,8 +171,7 @@
 			);
 			name = ColorModeChangeView;
 			packageProductDependencies = (
-				8D0C0F6528DAFE4D009BF177 /* SnapKit */,
-				8D0C0F6728DAFE4D009BF177 /* SnapKit-Dynamic */,
+				8DC815AB28DB031B00D7385A /* SnapKit */,
 			);
 			productName = ColorModeChangeView;
 			productReference = 8D0C0F3128D98F29009BF177 /* ColorModeChangeView.app */;
@@ -224,7 +246,7 @@
 			);
 			mainGroup = 8D0C0F2828D98F29009BF177;
 			packageReferences = (
-				8D0C0F6428DAFE4D009BF177 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8DC815AA28DB031B00D7385A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 8D0C0F3228D98F29009BF177 /* Products */;
 			projectDirPath = "";
@@ -244,6 +266,8 @@
 			files = (
 				8D0C0F4128D98F2A009BF177 /* LaunchScreen.storyboard in Resources */,
 				8D0C0F3E28D98F2A009BF177 /* Assets.xcassets in Resources */,
+				8DC815AF28DB1CEE00D7385A /* NanumGothicExtraBold.ttf in Resources */,
+				8DC815B128DB1CF600D7385A /* NanumGothicBold.ttf in Resources */,
 				8D0C0F3C28D98F29009BF177 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D0C0F3928D98F29009BF177 /* ViewController.swift in Sources */,
+				8DC815B428DB221200D7385A /* announceLabel.swift in Sources */,
 				8D0C0F3528D98F29009BF177 /* AppDelegate.swift in Sources */,
 				8D0C0F3728D98F29009BF177 /* SceneDelegate.swift in Sources */,
 			);
@@ -615,7 +640,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8D0C0F6428DAFE4D009BF177 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		8DC815AA28DB031B00D7385A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -626,15 +651,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8D0C0F6528DAFE4D009BF177 /* SnapKit */ = {
+		8DC815AB28DB031B00D7385A /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8D0C0F6428DAFE4D009BF177 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 8DC815AA28DB031B00D7385A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		8D0C0F6728DAFE4D009BF177 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8D0C0F6428DAFE4D009BF177 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
