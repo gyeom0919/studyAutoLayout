@@ -23,15 +23,23 @@ class ViewController: UIViewController {
     private let lightModeImage = UIImageView()
     private let leftRadioButton = UIButton()
     private let rightRadioButton = UIButton()
+    private let leftradioView = UIView()
+    private let confirmButton = UIButton()
     
     // LeftButton 눌렸을 시
     @objc func leftButtonClicked(_ sender : UIButton) {
         
-            sender.setImage(UIImage(named: "radio_filled"), for: .normal)
-            rightRadioButton.setImage(UIImage(named: "radio"), for: .normal)
+//        if(sender.isSelected){
+        sender.setImage(UIImage(named: "radio_filled"), for: .normal)
+//            leftRadioButton.isSelected = true
+        sender.setImage(UIImage(named: "radio"), for: .selected)
+
+            print("left clicked")
+
+//        }
+        
         
 //        leftRadioButton.image = UIImage(named: "radio_filled")
-        print("left clicked")
     }
     
     //  RightButton 눌렸을 시
@@ -217,6 +225,45 @@ extension ViewController {
             make in
             make.top.equalTo(lightModeLabel.snp.bottom).offset(20)
             make.right.equalTo(view.snp.right).offset(-91)
+        }
+        
+//        let leftradioView = UIView()
+//
+//        self.view.addSubview(leftradioView)
+//
+//        leftradioView.snp.makeConstraints{
+//            make in
+//            make.top.equalTo(darkModeLabel.snp.bottom).offset(20)
+//            make.left.equalTo(view.snp.left).offset(91)
+//        }
+//
+//        let leftButton = UIButton()
+//
+//        leftradioView.addSubview(leftButton)
+//
+//        leftButton.snp.makeConstraints{
+//            make in
+//            make.top.equalTo(darkModeLabel.snp.bottom).offset(20)
+//            make.left.equalTo(view.snp.left).offset(91)
+//        }
+        
+//        leftButton.addTarget(self, action: #selector(onRadioButtonTap), for: .touchUpInside)
+        
+        
+        let confirmButton = UIButton()
+        confirmButton.backgroundColor = UIColor(red: 0.263, green: 0.61, blue: 0.988, alpha: 1)
+        confirmButton.setTitle("확인", for: .normal)
+        view.addSubview(confirmButton)
+        
+        confirmButton.snp.makeConstraints{
+            make in
+//            make.top.equalTo(leftRadioButton.snp.bottom).offset(s180)
+            make.left.equalTo(view.snp.left).offset(0)
+            make.right.equalTo(view.snp.right).offset(0)
+            make.bottom.equalTo(view.snp.bottomMargin).offset(0)
+            
+            make.height.equalTo(48)
+//            make.width.equalTo(375)
         }
         
     }
