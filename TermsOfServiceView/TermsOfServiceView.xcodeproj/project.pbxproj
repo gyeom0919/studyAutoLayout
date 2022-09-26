@@ -16,6 +16,8 @@
 		8D9FE2CB28E17E85006E0C13 /* TermsOfServiceViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FE2CA28E17E85006E0C13 /* TermsOfServiceViewTests.swift */; };
 		8D9FE2D528E17E85006E0C13 /* TermsOfServiceViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FE2D428E17E85006E0C13 /* TermsOfServiceViewUITests.swift */; };
 		8D9FE2D728E17E85006E0C13 /* TermsOfServiceViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FE2D628E17E85006E0C13 /* TermsOfServiceViewUITestsLaunchTests.swift */; };
+		8D9FE2E428E1CCC4006E0C13 /* checkBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FE2E328E1CCC4006E0C13 /* checkBoxButton.swift */; };
+		8D9FE2E628E1D022006E0C13 /* confirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FE2E528E1D022006E0C13 /* confirmButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		8D9FE2D028E17E85006E0C13 /* TermsOfServiceViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TermsOfServiceViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9FE2D428E17E85006E0C13 /* TermsOfServiceViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewUITests.swift; sourceTree = "<group>"; };
 		8D9FE2D628E17E85006E0C13 /* TermsOfServiceViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D9FE2E328E1CCC4006E0C13 /* checkBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkBoxButton.swift; sourceTree = "<group>"; };
+		8D9FE2E528E1D022006E0C13 /* confirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +107,11 @@
 				8D9FE2B528E17E84006E0C13 /* SceneDelegate.swift */,
 				8D9FE2B728E17E84006E0C13 /* ViewController.swift */,
 				8D9FE2B928E17E84006E0C13 /* Main.storyboard */,
+				8D9FE2E528E1D022006E0C13 /* confirmButton.swift */,
 				8D9FE2BC28E17E85006E0C13 /* Assets.xcassets */,
 				8D9FE2BE28E17E85006E0C13 /* LaunchScreen.storyboard */,
 				8D9FE2C128E17E85006E0C13 /* Info.plist */,
+				8D9FE2E328E1CCC4006E0C13 /* checkBoxButton.swift */,
 			);
 			path = TermsOfServiceView;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			files = (
 				8D9FE2B828E17E84006E0C13 /* ViewController.swift in Sources */,
 				8D9FE2B428E17E84006E0C13 /* AppDelegate.swift in Sources */,
+				8D9FE2E428E1CCC4006E0C13 /* checkBoxButton.swift in Sources */,
 				8D9FE2B628E17E84006E0C13 /* SceneDelegate.swift in Sources */,
+				8D9FE2E628E1D022006E0C13 /* confirmButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,24 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TermsOfServiceView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jz-WP-Noh">
+                                <rect key="frame" x="0.0" y="47" width="49.333333333333336" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서비스 이용 동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVp-f6-36f">
+                                <rect key="frame" x="16" y="121.33333333333333" width="358" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKc-3N-FSu" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
+                                <rect key="frame" x="16" y="229" width="16" height="16"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="AcY-QX-gLk"/>
+                                    <constraint firstAttribute="height" constant="16" id="ks5-8L-gLP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약관 전체동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dy6-qw-E18">
+                                <rect key="frame" x="44" y="230" width="66" height="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yko-bf-Lbq">
+                                <rect key="frame" x="17" y="270" width="358" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="w9J-84-cmy"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be0-ht-tyR" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
+                                <rect key="frame" x="17" y="295" width="16" height="16"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="DjX-pd-3ck"/>
+                                    <constraint firstAttribute="height" constant="16" id="tDK-a4-oLb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBP-PE-MoV" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
+                                <rect key="frame" x="17" y="335" width="16" height="16"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="2yi-xN-SYG"/>
+                                    <constraint firstAttribute="height" constant="16" id="z5C-ro-bph"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFx-jl-7Zs" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
+                                <rect key="frame" x="17" y="375" width="16" height="16"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Hp7-eR-haI"/>
+                                    <constraint firstAttribute="width" constant="16" id="WYh-9r-Qy3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbh-hk-mMq" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
+                                <rect key="frame" x="17" y="415" width="16" height="16"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="46Y-as-AFs"/>
+                                    <constraint firstAttribute="width" constant="16" id="ydM-s6-4eK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 14세 이상입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwH-PB-lqu">
+                                <rect key="frame" x="45" y="296" width="97" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(필수) 서비스 이용약관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1m-Xz-zxz">
+                                <rect key="frame" x="45" y="336" width="110" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(필수) 개인정보 처리방침" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2A-It-d7u">
+                                <rect key="frame" x="45" y="376" width="120" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(선택) 마케팅 정보 수신동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwE-65-G6v">
+                                <rect key="frame" x="45" y="416" width="134" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="054-Kr-Rj0" customClass="confirmButton" customModule="TermsOfServiceView" customModuleProvider="target">
+                                <rect key="frame" x="16" y="732" width="358" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="5DC-cm-MSG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="확인"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="be0-ht-tyR" firstAttribute="top" secondItem="yko-bf-Lbq" secondAttribute="bottom" constant="24" id="007-6o-zbc"/>
+                            <constraint firstItem="HBP-PE-MoV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="2aR-q3-AbG"/>
+                            <constraint firstItem="B1m-Xz-zxz" firstAttribute="top" secondItem="dwH-PB-lqu" secondAttribute="bottom" constant="25" id="4sR-1J-i7a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="054-Kr-Rj0" secondAttribute="trailing" constant="16" id="6Bf-Rj-BPc"/>
+                            <constraint firstItem="jwE-65-G6v" firstAttribute="leading" secondItem="Mbh-hk-mMq" secondAttribute="trailing" constant="12" id="8lv-Ti-SsL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yko-bf-Lbq" secondAttribute="trailing" constant="15" id="Ed6-uL-5Bb"/>
+                            <constraint firstItem="Dy6-qw-E18" firstAttribute="top" secondItem="dVp-f6-36f" secondAttribute="bottom" constant="81" id="FGX-kf-tQU"/>
+                            <constraint firstItem="9Jz-WP-Noh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JEn-s6-ULM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dVp-f6-36f" secondAttribute="trailing" constant="16" id="LII-zl-EMH"/>
+                            <constraint firstItem="KKc-3N-FSu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="O57-TI-IBe"/>
+                            <constraint firstItem="jwE-65-G6v" firstAttribute="top" secondItem="a2A-It-d7u" secondAttribute="bottom" constant="25" id="P1H-hM-arb"/>
+                            <constraint firstItem="oFx-jl-7Zs" firstAttribute="top" secondItem="HBP-PE-MoV" secondAttribute="bottom" constant="24" id="SAU-FR-ELU"/>
+                            <constraint firstItem="Dy6-qw-E18" firstAttribute="leading" secondItem="KKc-3N-FSu" secondAttribute="trailing" constant="12" id="XWf-Fg-k0J"/>
+                            <constraint firstItem="dVp-f6-36f" firstAttribute="top" secondItem="9Jz-WP-Noh" secondAttribute="bottom" constant="40" id="ahv-Gq-Svq"/>
+                            <constraint firstItem="Mbh-hk-mMq" firstAttribute="top" secondItem="oFx-jl-7Zs" secondAttribute="bottom" constant="24" id="cSK-QM-SQN"/>
+                            <constraint firstItem="a2A-It-d7u" firstAttribute="top" secondItem="B1m-Xz-zxz" secondAttribute="bottom" constant="25" id="dEf-u4-knU"/>
+                            <constraint firstItem="Mbh-hk-mMq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="dgh-15-8Vj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="054-Kr-Rj0" secondAttribute="bottom" constant="30" id="e0X-Zz-Ckx"/>
+                            <constraint firstItem="9Jz-WP-Noh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fgJ-Eb-RwX"/>
+                            <constraint firstItem="dwH-PB-lqu" firstAttribute="leading" secondItem="be0-ht-tyR" secondAttribute="trailing" constant="12" id="fhv-py-RVB"/>
+                            <constraint firstItem="a2A-It-d7u" firstAttribute="leading" secondItem="oFx-jl-7Zs" secondAttribute="trailing" constant="12" id="huL-Wf-H77"/>
+                            <constraint firstItem="be0-ht-tyR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="ir9-tD-GmO"/>
+                            <constraint firstItem="KKc-3N-FSu" firstAttribute="top" secondItem="dVp-f6-36f" secondAttribute="bottom" constant="80" id="j3x-R1-jUy"/>
+                            <constraint firstItem="054-Kr-Rj0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jMY-P1-yPs"/>
+                            <constraint firstItem="B1m-Xz-zxz" firstAttribute="leading" secondItem="HBP-PE-MoV" secondAttribute="trailing" constant="12" id="jfv-XA-KZi"/>
+                            <constraint firstItem="dwH-PB-lqu" firstAttribute="top" secondItem="yko-bf-Lbq" secondAttribute="bottom" constant="25" id="nNF-xD-QTw"/>
+                            <constraint firstItem="oFx-jl-7Zs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="oUo-SD-7jP"/>
+                            <constraint firstItem="yko-bf-Lbq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="pFC-DO-m70"/>
+                            <constraint firstItem="dVp-f6-36f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pKO-W1-cub"/>
+                            <constraint firstItem="HBP-PE-MoV" firstAttribute="top" secondItem="be0-ht-tyR" secondAttribute="bottom" constant="24" id="pj9-CM-bzf"/>
+                            <constraint firstItem="yko-bf-Lbq" firstAttribute="top" secondItem="KKc-3N-FSu" secondAttribute="bottom" constant="25" id="rMu-Ur-A6E"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="SJX-ZL-Muk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="594" y="-24"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
