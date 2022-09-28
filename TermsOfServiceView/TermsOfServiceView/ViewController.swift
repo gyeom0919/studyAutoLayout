@@ -26,23 +26,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func checkAllButton(_ sender: Any) {
-    }
-    
-    @IBAction func checkBoxBtn1(_ sender: Any) {
-    }
-    
-    @IBAction func checkBoxBtn2(_ sender: Any) {
-    }
-    
-    @IBAction func checkBoxBtn3(_ sender: Any) {
-    }
-    
-    @IBAction func checkBoxBtn4(_ sender: Any) {
-    }
-    
-    
+
+  
     
 }
 

@@ -30,7 +30,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKc-3N-FSu" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKc-3N-FSu" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
                                 <rect key="frame" x="16" y="229" width="16" height="16"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
@@ -39,9 +39,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="checkAllButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FP6-pm-udA"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="약관 전체동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dy6-qw-E18">
                                 <rect key="frame" x="44" y="230" width="66" height="15"/>
@@ -65,9 +62,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="checkBoxBtn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5K-zI-naH"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBP-PE-MoV" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
                                 <rect key="frame" x="17" y="335" width="16" height="16"/>
@@ -78,9 +72,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="checkBoxBtn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ur-AA-VGJ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFx-jl-7Zs" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
                                 <rect key="frame" x="17" y="375" width="16" height="16"/>
@@ -91,9 +82,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="checkBoxBtn3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uma-rs-qrT"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbh-hk-mMq" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
                                 <rect key="frame" x="17" y="415" width="16" height="16"/>
@@ -104,9 +92,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="checkBoxBtn4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ihV-iz-F9G"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 14세 이상입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwH-PB-lqu">
                                 <rect key="frame" x="45" y="296" width="97" height="15"/>
