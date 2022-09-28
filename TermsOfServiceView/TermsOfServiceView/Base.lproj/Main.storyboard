@@ -63,7 +63,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBP-PE-MoV" customClass="requiredButton" customModule="TermsOfServiceView" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBP-PE-MoV" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
                                 <rect key="frame" x="17" y="335" width="16" height="16"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
@@ -76,7 +76,7 @@
                                     <action selector="changeLastButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0mw-0c-LeA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFx-jl-7Zs" customClass="requiredButton" customModule="TermsOfServiceView" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFx-jl-7Zs" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
                                 <rect key="frame" x="17" y="375" width="16" height="16"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>

@@ -11,8 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var buttonForAll: checkBoxButton!
     @IBOutlet weak var button1: checkBoxButton!
-    @IBOutlet weak var button2: requiredButton!
-    @IBOutlet weak var button3: requiredButton!
+    @IBOutlet weak var button2: checkBoxButton!
+    @IBOutlet weak var button3: checkBoxButton!
     @IBOutlet weak var confirmButton: confirmButton!
     @IBOutlet weak var button4: checkBoxButton!
     
@@ -30,10 +30,11 @@ class ViewController: UIViewController {
   
     @IBAction func changeLastButton(_ sender: UIButton) {
         
-        if(button2.isChecked == false && button3.isChecked == false){
+        if(button2.isChecked == true && button3.isChecked == true){
             confirmButton.backgroundColor = .systemBlue
         }else{
             confirmButton.backgroundColor = UIColor(red: 0.906, green: 0.911, blue: 0.922, alpha: 1)
+            confirmButton.titleLabel?.textColor = UIColor.white
             
         }
         
