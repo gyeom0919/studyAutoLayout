@@ -11,15 +11,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var buttonForAll: checkBoxButton!
     @IBOutlet weak var button1: checkBoxButton!
-    @IBOutlet weak var button2: checkBoxButton!
-    @IBOutlet weak var button3: checkBoxButton!
+    @IBOutlet weak var button2: requiredButton!
+    @IBOutlet weak var button3: requiredButton!
+    @IBOutlet weak var confirmButton: confirmButton!
     @IBOutlet weak var button4: checkBoxButton!
     
-    var flagAll = false
-    var flag1 = false
-    var flag2 = false
-    var flag3 = false
-    var flag4 = false
     
     var selected : Bool = false
     
@@ -27,10 +23,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //MARK: - (필수) 버튼 클릭시 아래 확인 버튼 추가 예정
+        //MARK: - 리액티브 배우고 수정
+
     }
 
   
+    @IBAction func changeLastButton(_ sender: UIButton) {
+        
+        if(button2.isChecked == false && button3.isChecked == false){
+            confirmButton.backgroundColor = .systemBlue
+        }else{
+            confirmButton.backgroundColor = UIColor(red: 0.906, green: 0.911, blue: 0.922, alpha: 1)
+            
+        }
+        
+    }
     
 }
 

@@ -72,6 +72,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="changeLastButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0mw-0c-LeA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFx-jl-7Zs" customClass="requiredButton" customModule="TermsOfServiceView" customModuleProvider="target">
                                 <rect key="frame" x="17" y="375" width="16" height="16"/>
@@ -82,6 +85,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="changeLastButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4e5-ZR-QO7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbh-hk-mMq" customClass="checkBoxButton" customModule="TermsOfServiceView" customModuleProvider="target">
                                 <rect key="frame" x="17" y="415" width="16" height="16"/>
@@ -211,6 +217,7 @@
                         <outlet property="button3" destination="oFx-jl-7Zs" id="10o-1Z-2kZ"/>
                         <outlet property="button4" destination="Mbh-hk-mMq" id="FmE-nf-1Lk"/>
                         <outlet property="buttonForAll" destination="KKc-3N-FSu" id="Suh-L2-Bc9"/>
+                        <outlet property="confirmButton" destination="054-Kr-Rj0" id="ltZ-LS-VYS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
