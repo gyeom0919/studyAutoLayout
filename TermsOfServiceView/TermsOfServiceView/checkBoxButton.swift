@@ -33,7 +33,18 @@ class checkBoxButton: UIButton {
         if sender == self {
             isChecked = !isChecked
         }
+        
+        if(self.isChecked == true) {
+            
+            
+            debugPrint("2 Clicked")
+        }
+        
+        
+        
     }
+    
+    
 
   
     required init?(coder aDecoder : NSCoder) {

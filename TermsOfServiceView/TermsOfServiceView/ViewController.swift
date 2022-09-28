@@ -21,10 +21,13 @@ class ViewController: UIViewController {
     var flag3 = false
     var flag4 = false
     
+    var selected : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //MARK: - (필수) 버튼 클릭시 아래 확인 버튼 추가 예정
     }
 
   

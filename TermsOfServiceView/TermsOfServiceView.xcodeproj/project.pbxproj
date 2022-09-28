@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3B0BBD28E435EE00A92F56 /* requiredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B0BBC28E435EE00A92F56 /* requiredButton.swift */; };
 		8D9FE2B428E17E84006E0C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FE2B328E17E84006E0C13 /* AppDelegate.swift */; };
 		8D9FE2B628E17E84006E0C13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FE2B528E17E84006E0C13 /* SceneDelegate.swift */; };
 		8D9FE2B828E17E84006E0C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9FE2B728E17E84006E0C13 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D3B0BBC28E435EE00A92F56 /* requiredButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = requiredButton.swift; sourceTree = "<group>"; };
 		8D9FE2B028E17E84006E0C13 /* TermsOfServiceView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermsOfServiceView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9FE2B328E17E84006E0C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D9FE2B528E17E84006E0C13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				8D9FE2BE28E17E85006E0C13 /* LaunchScreen.storyboard */,
 				8D9FE2C128E17E85006E0C13 /* Info.plist */,
 				8D9FE2E328E1CCC4006E0C13 /* checkBoxButton.swift */,
+				8D3B0BBC28E435EE00A92F56 /* requiredButton.swift */,
 			);
 			path = TermsOfServiceView;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3B0BBD28E435EE00A92F56 /* requiredButton.swift in Sources */,
 				8D9FE2B828E17E84006E0C13 /* ViewController.swift in Sources */,
 				8D9FE2B428E17E84006E0C13 /* AppDelegate.swift in Sources */,
 				8D9FE2E428E1CCC4006E0C13 /* checkBoxButton.swift in Sources */,
