@@ -29,30 +29,41 @@ class ViewController: UIViewController {
         let notificationAlarmView = UIView().then {
             $0.layer.cornerRadius = 0
             $0.backgroundColor = UIColor.systemRed
+            $0.frame = CGRect(x: 0, y: 0, width: 23, height: 5)
+            $0.layer.cornerRadius = 15
+//            $0.priority
         }
         
-        notificationAlarmView.snp.makeConstraints({
-            $0.width.equalTo(23)
-            $0.height.equalTo(23)
-        })
+//        notificationAlarmView.snp.makeConstraints({
+//
+//        })
         
         let notificationImg = UIImageView().then{
             $0.image = UIImage(systemName: "bell")
             $0.tintColor = .black
-
+            
         }
         
         notificationImg.snp.makeConstraints( {
             $0.width.equalTo(40)
             $0.height.equalTo(30)
-//            $0.size.equalTo(24)
+            //            $0.size.equalTo(24)
+        })
+        
+        let chatStackView = UIStackView().then{
+            $0.addArrangedSubview(chatButton)
+            $0.addArrangedSubview(notificationAlarmView)
+            $0.addArrangedSubview(notificationImg)
+        }
+        
+        chatStackView.snp.makeConstraints({
+            $0.width.equalTo(100)
         })
         
         let headerView = UIStackView().then{
             $0.addArrangedSubview(titleLabel)
-            $0.addArrangedSubview(chatButton)
-            $0.addArrangedSubview(notificationAlarmView)
-            $0.addArrangedSubview(notificationImg)
+            $0.addArrangedSubview(chatStackView)
+//            $0.addArrangedSubview(notificationImg)
         }
         
         view.addSubview(headerView)
@@ -62,7 +73,7 @@ class ViewController: UIViewController {
             $0.left.equalTo(view.safeAreaLayoutGuide.snp.left).offset(16)
             
             $0.width.equalTo(375)
-            $0.height.equalTo(44)
+//            $0.height.equalTo(44)
         })
         
         
